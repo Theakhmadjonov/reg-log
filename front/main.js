@@ -3,7 +3,7 @@ const form = document.querySelector("form");
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
   const fullName = form.querySelector(
-    'name-input'
+    '.name-input'
   ).value;
   const email = form.querySelector(
     '.email-input'
