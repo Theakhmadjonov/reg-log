@@ -3,12 +3,12 @@ const form = document.querySelector("form");
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
   const fullName = form.querySelector(
-    'input[placeholder="Enter your name"]'
+    'name-input'
   ).value;
   const email = form.querySelector(
-    'input[placeholder="Enter your email"]'
+    '.email-input'
   ).value;
-  const password = form.querySelector('input[placeholder="12ABcd@/!?"]').value;
+  const password = form.querySelector('.pass-input').value;
 
   try {
     const response = await fetch("http://127.0.0.1:4000/api/auth/register", {
@@ -35,7 +35,7 @@ form.addEventListener("submit", async (e) => {
   }
 });
 const googleBtn = document.querySelector(
-  'button img[src="./icons8-google 1.svg"]'
+  '.google-btn'
 ).parentElement;
 
 googleBtn.addEventListener("click", () => {
